@@ -1,0 +1,1 @@
+<view class="image-container data-v-82260311"><view class="pic data-v-82260311" bindtap="{{b}}"><image src="{{a}}" mode="widthFix" class="image data-v-82260311" show-menu-by-longpress="true"/></view><view class="pic data-v-82260311" bindtap="{{d}}"><image src="{{c}}" mode="widthFix" class="image data-v-82260311" show-menu-by-longpress="true"/></view></view>

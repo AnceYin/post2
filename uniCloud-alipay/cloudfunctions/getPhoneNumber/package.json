@@ -1,0 +1,17 @@
+{
+	"name": "getPhoneNumber",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"dependencies": {
+		"axios": "^1.7.2"
+	},
+	"extensions": {},
+	"cloudfunction-config": {
+		"memorySize": 512,
+		"timeout": 60,
+		"triggers": [],
+		"runtime": "Nodejs18",
+		"keepRunningAfterReturn": true
+	}
+}

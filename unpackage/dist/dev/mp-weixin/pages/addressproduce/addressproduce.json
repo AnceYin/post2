@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "生成地址",
+  "usingComponents": {
+    "addressproduce-vue": "../../components/addressproduce/addressproduce"
+  }
+}

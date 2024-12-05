@@ -1,0 +1,7 @@
+{
+  "name": "getCarousel",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

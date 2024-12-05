@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/switchPhone/switchPhone",
+    "pages/expressdetail/expressdetail",
+    "pages/shippingdetail/shippingdetail",
+    "pages/introdetail/introdetail",
+    "pages/addressproduce/addressproduce",
+    "pages/demo/demo",
+    "pages/searchexpressdata/searchexpressdata"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "顺手办校园服务中心",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "usingComponents": {}
+}

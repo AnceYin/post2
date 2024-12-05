@@ -1,0 +1,560 @@
+
+.noticbox {
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		background-color: #F9F9F9FF;
+}
+
+	/* 公告 */
+.noticbox swiper {
+		margin: 10rpx 0 10rpx 10rpx;
+		/* width: 96%; */
+		flex: 1;
+		height: 60rpx;
+		font-size: 28rpx;
+		color: #000;
+		background-color: #fff;
+		border-radius: 10rpx 0 0 10rpx;
+		padding-left: 10rpx;
+		line-height: 60rpx;
+}
+.noticbox image {
+		margin-right: 10rpx;
+		border-radius: 0 10rpx 10rpx 0;
+}
+
+	/* 搜索快递 */
+	/* 	.searchbox {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		background-color: #eee;
+	} */
+
+
+
+	/* 	.searchbox .search-top {
+		display: flex;
+		align-items: center;
+		background-color: #fff;
+		border-radius: 10rpx;
+		margin: 0 10rpx 10rpx 10rpx;
+		height: 60rpx;
+	} */
+
+	/* 	.searchbox .search-top input {
+		padding-left: 15rpx;
+		font-size: 28rpx;
+		flex: 1;
+		height: 65rpx;
+	} */
+.searchbox .search-top image {
+		margin: 10rpx 0 10rpx 20rpx;
+		height: 35rpx;
+}
+.scroll-container {
+		/* padding-top: 30rpx; */
+		padding: 30rpx 20rpx 0 20rpx;
+		/* height: 600rpx; */
+		/* 定义滚动区域的固定高度，可以根据需要调整 */
+		overflow-y: scroll;
+		/* 启用垂直滚动 */
+}
+.intro {
+		max-height: 500rpx;
+		/* 定义滚动区域的固定最大高度 */
+		overflow-y: auto;
+		/* 启用垂直滚动 */
+		display: flex;
+		flex-direction: column;
+		/* 垂直排列卡片 */
+		gap: 10px;
+		margin-top: 40rpx;
+		padding: 10px;
+		/* 添加内边距 */
+		box-sizing: border-box;
+		/* 确保 padding 不影响盒子尺寸 */
+}
+.card {
+		margin-top: 32rpx;
+		/* position: relative; */
+		/* border: 1px solid #ccc; */
+		/* padding: 5px; */
+		border-radius: 8px;
+		/* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+		width: 100%;
+		/* 占满父容器宽度 */
+		height: 223rpx;
+		background-color: #fff;
+		overflow: hidden;
+		/* 确保图片不超出卡片边界 */
+}
+.card-content {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		/* 确保内容占满整个卡片 */
+}
+.card:nth-of-type(2) .card-content .addressboxData button {
+		background-color: #EB2121FF;
+}
+.card:nth-of-type(3) .card-content .addressboxData button {
+		background-color: #2193EBFF;
+}
+.card:nth-of-type(4) .card-content .addressboxData button {
+		background-color: #2CDDC5FF;
+}
+
+/* 	.card:nth-of-type(5) .card-content .addressboxData button {
+		background-color: #ce73c2;
+	} */
+.card:nth-of-type(5) .card-content .addressboxData button {
+		background-color: #4CA7FFFF;
+}
+.card:nth-of-type(2) .card-content .addressboxData text {
+		color: #8C1919FF;
+}
+.card:nth-of-type(3) .card-content .addressboxData text {
+		color: #145181FF;
+}
+.card:nth-of-type(4) .card-content .addressboxData text {
+		color: #14816FFF;
+}
+	
+/* 	.card:nth-of-type(5) .card-content .addressboxData text {
+		color: #bf6ab5;
+	} */
+.card:nth-of-type(5) .card-content .addressboxData text {
+		color: #145181FF;
+}
+.card .cusotmerBt {
+		top: 0rpx;
+		z-index: 100;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: #000;
+		opacity: 0;
+}
+
+
+	/* 	.card .card-content .addressboxData text:nth-child(){
+		
+	} */
+.background-image {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		/* height: 100%; */
+		height: 100%;
+		object-fit: cover;
+		z-index: 1;
+		/* 确保图片位于底层 */
+}
+.intro-front {
+		position: relative;
+		z-index: 2;
+		/* 确保文字位于图片上层 */
+		color: #000;
+		/* 根据需要选择合适的文字颜色 */
+		padding: 5px 10px;
+		border-radius: 5px;
+		text-align: center;
+		/* 文字居中 */
+		margin: 0;
+		/* 移除默认的外边距 */
+		font-weight: 400;
+		top: 25rpx;
+		right: 30rpx;
+		color: #2193EBFF;
+}
+.content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		overflow-y: scroll;
+		height: 100vh;
+		/* 使 content 占满整个视口高度 */
+		position: relative;
+		/* 为了绝对定位 txt */
+		/* background-color: #fff6e4FF; */
+}
+
+	/*  */
+.top {
+		position: -webkit-sticky;
+		position: sticky;
+		top: 0%;
+		width: 100%;
+		z-index: 1000;
+		/* background-color: #fff6e4FF; */
+}
+
+	/*  */
+.tab-container {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		background-color: #F9F9F9FF;
+}
+.tab-nav-box {
+		height: 86rpx;
+		position: relative;
+}
+.tab-nav {
+		position: fixed;
+		left: 0;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		border-bottom: 1px solid #ebedf0;
+		z-index: 1000;
+		/* 确保导航栏在页面内容之上 */
+		background-color: #fff;
+		/* 设置背景色 */
+}
+.tab-item {
+		flex: 1;
+		text-align: center;
+		padding: 10px 0;
+		font-size: 16px;
+		color: #333;
+		cursor: pointer;
+}
+.tab-item.active {
+		color: #FAAB1DFF;
+		font-weight: bold;
+}
+.tab-underline {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 30%;
+		height: 2px;
+		background-color: #FAAB1DFF;
+		transition: left 0.3s;
+}
+.tab-content {
+		flex: 1;
+		/* overflow: auto; */
+		/* padding-bottom: 20rpx */
+}
+.tab-content .tab-swiper {
+		height: 100%;
+}
+.tab-content .tab-swiper swiper-item {
+		overflow: auto;
+}
+
+	/* 切换手机号 */
+.switchPhonebox #swphonebt {
+		margin-top: 40rpx;
+		width: 600rpx;
+		height: 86rpx;
+		background: #FAAB1D;
+		border-radius: 50rpx;
+		font-weight: 400;
+		font-size: 28rpx;
+		color: #FFFFFF;
+		line-height: 86rpx;
+}
+.tab-pane {
+		width: 100%;
+		height: 100%;
+		/* display: none; */
+}
+
+	/*  */
+.left-bottom-box {
+
+		padding: 10px;
+
+		display: flex;
+
+		justify-content: space-between;
+		margin-bottom: 40rpx;
+}
+
+	/*  */
+.tab-pane.active {
+		display: block;
+}
+
+	/* 一键生成地址按钮 */
+.tab-pane button:nth-child(1) {
+		/* margin-top: 61rpx; */
+		width: 90%;
+		height: 86rpx;
+		line-height: 86rpx;
+		background-color: #FAAB1D;
+		font-size: 28rpx;
+		color: #FEFEFE;
+		border-radius: 43rpx;
+}
+
+	/* 复制内容 */
+.tab-pane .adressData {
+		position: relative;
+		height: 200rpx;
+		/* background-color: #dcdcdc; */
+		border: 1rpx solid #333;
+		border-radius: 30rpx;
+		margin: 30rpx;
+}
+.tab-pane .adressData textarea {
+		padding: 15rpx;
+		width: 100%;
+		height: 60rpx;
+		box-sizing: border-box;
+		background-color: #26ff8b;
+		border-radius: 20rpx;
+		/* border: 1rpx solid #333; */
+		border-radius: 30rpx;
+		font-size: 28rpx;
+		color: #666;
+}
+.tab-pane .adressData button {
+		position: absolute;
+		right: 15rpx;
+		bottom: 15rpx;
+		width: 110rpx;
+		height: 60rpx;
+		/* box-sizing: border-box; */
+		line-height: 60rpx;
+		font-size: 25rpx;
+		color: #000;
+		border: 1rpx solid #666;
+		border-radius: 10rpx;
+		background-color: #fff;
+}
+
+
+
+
+
+	/*  */
+.txt {
+		position: absolute;
+		top: 20px;
+		/* 距离顶部的距离 */
+		left: 20px;
+		/* 距离左边的距离 */
+}
+
+	/* .middle { */
+	/* width: 90%; */
+	/* 调整 middle 盒子的宽度 */
+	/* margin: 20px 5px; */
+	/* 设置上下外边距 */
+	/* padding: 12px; */
+	/* 设置内边距 */
+	/* background-color: #fff; */
+	/* 设置背景色 */
+	/* border-radius: 10px; */
+	/* 设置圆角 */
+	/* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+	/* 设置阴影 */
+	/* } */
+.shipping-button {
+
+		width: 30%;
+		/* Adjust the width as needed */
+		height: 86rpx;
+		background-color: #FAAB1D;
+		/* Change the background color if needed */
+		font-size: 28rpx;
+		color: #FEFEFE;
+		border-radius: 43rpx;
+		margin-right: 10px;
+		/* Add margin between buttons if needed */
+		line-height: 86rpx;
+}
+.no-data {
+		position: relative;
+}
+.no-data,
+	.no-packages {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+}
+.no-packages-image {
+		width: 100px;
+		height: 100px;
+		margin-bottom: 10px;
+}
+.no-packages-text {
+		font-size: 16px;
+		color: #666;
+}
+.no-data-image {
+		width: 491.85rpx;
+		height: 504.06rpx;
+}
+.no-data-text {
+		position: absolute;
+		top: 424rpx;
+		text-align: center;
+		color: #9C9C9CFF;
+		font-size: 28rpx;
+}
+.no-data-button {
+		width: 235rpx;
+		height: 68rpx;
+		/* margin-top: 11rpx; */
+		/* 		padding: 10px 20px; */
+		background-color: #ffa500;
+		color: white;
+		border: none;
+		border-radius: 50px;
+		cursor: pointer;
+		font-size: 28rpx;
+		line-height: 68rpx;
+}
+.collapse {
+		margin-bottom: 20rpx;
+		width: 100%;
+}
+.collapse-title {
+		display: flex;
+		align-items: center;
+		padding: 10px;
+		background-color: #fff;
+		/* border: 1px solid #dcdcdc; */
+		cursor: pointer;
+		/* border-radius: 10px; */
+		/* 设置圆角 */
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		/* border-radius: 25rpx; */
+		border-radius: 8rpx;
+}
+.collapse-image {
+		width: 160rpx;
+		height: 105rpx;
+		margin-right: 31rpx;
+		/* object-fit: cover; */
+}
+.collapse-text-content {
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+}
+.collapse-text-title {
+		font-size: 36rpx;
+		font-weight: bold;
+		color: #1E1E1E;
+}
+.collapse-text-subtitle {
+		font-size: 22rpx;
+		color: #9E9E9EFF;
+}
+.collapse-text-info {
+		font-size: 24rpx;
+		color: #1E1E1EFF;
+}
+.collapse-status {
+		font-size: 28rpx;
+		color: #A1A1A1FF;
+		margin-left: 58rpx;
+}
+.collapse-content {
+		padding: 10px;
+		background-color: #fafafa;
+		border: 1px solid #dcdcdc;
+		border-top: none;
+}
+.swiper {
+		width: 100%;
+		height: 100%;
+		border-radius: 10px;
+		overflow: hidden;
+}
+.swiper-item {
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		padding: 0 20px;
+}
+image {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		/* border-radius: 10px; */
+}
+
+	/*  */
+.left-top-box {
+		display: flex;
+}
+
+	/* 生成地址与寄快递入口盒子  */
+.addressOrSendEntry {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: #fff;
+		padding: 45rpx 25rpx;
+		box-sizing: border-box;
+		/* height: 900rpx; */
+		/* 固定高度 */
+		/* overflow-y: auto; */
+		/* 启用垂直滚动 */
+}
+
+	/* 寄快递入口 */
+.addressOrSendEntry .addressbox,
+	/* 生成地址入口 */
+	.addressOrSendEntry .sendbox {
+		position: relative;
+		/* margin-top: 32rpx; */
+		width: 702rpx;
+		height: 223rpx;
+}
+.addressOrSendEntry .sendbox {
+		margin-top: 32rpx;
+}
+.addressOrSendEntry .addressbox .addressboxData,
+	.addressOrSendEntry .sendbox .sendboxData {
+		position: absolute;
+		z-index: 100;
+		top: 63rpx;
+		left: 69rpx;
+}
+.addressOrSendEntry .addressbox .addressboxData text,
+	.addressOrSendEntry .sendbox .sendboxData text {
+		font-size: 36rpx;
+		font-weight: 700;
+}
+.addressOrSendEntry .addressbox .addressboxData button,
+	.addressOrSendEntry .sendbox .sendboxData button {
+		margin: 0;
+		padding: 0;
+		margin-top: 22rpx;
+		width: 143rpx;
+		height: 40rpx;
+		font-size: 24rpx;
+		border-radius: 25rpx;
+		background-color: #FAAB1DFF;
+		line-height: 40rpx;
+		color: #fff;
+}
+.addressOrSendEntry .addressbox .addressboxData text {
+		color: #523B11FF;
+}
+.addressOrSendEntry .sendbox .sendboxData text {
+		color: #145181FF;
+}
+.addressOrSendEntry .addressbox .addressboxData button {
+		background-color: #FAAB1DFF;
+}
+.addressOrSendEntry .sendbox .sendboxData button {
+		background-color: #2193EBFF;
+}

@@ -1,0 +1,20 @@
+
+.image-container.data-v-82260311 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+.pic.data-v-82260311 {
+    margin: 10px;
+    width: 80%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.image.data-v-82260311 {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}

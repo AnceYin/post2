@@ -1,0 +1,88 @@
+.content-box {
+  height: 100vh;
+  background-color: #eee;
+  overflow: auto;
+}
+.content-box .searchbox {
+  display: flex;
+  flex-direction: column;
+}
+.content-box .searchbox .search-top {
+  display: flex;
+  align-items: center;
+  height: 80rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  margin: 50rpx 20rpx 30rpx;
+}
+.content-box .searchbox .search-top input {
+  padding-left: 20rpx;
+  font-size: 28rpx;
+  flex: 1;
+}
+.content-box .searchbox .search-top image {
+  margin: 0 30rpx;
+  height: 40rpx;
+}
+.content-box .searchbox .search-content {
+  padding: 0 24rpx;
+}
+.content-box .searchbox .search-content .search-item:nth-child(n) {
+  animation: iteman 0.5s ease;
+}
+.content-box .searchbox .search-content .search-item:nth-child(2n+1) {
+  animation: iteman2 0.5s ease;
+}
+.content-box .searchbox .search-content .search-item {
+  margin-bottom: 28rpx;
+  display: flex;
+  align-items: center;
+  height: 200rpx;
+  background-color: #FFFFFFFF;
+}
+.content-box .searchbox .search-content .search-item image {
+  margin-left: 24rpx;
+  margin-right: 30rpx;
+  width: 160rpx;
+  height: 105rpx;
+}
+.content-box .searchbox .search-content .search-item .item-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  color: #000000FF;
+}
+.content-box .searchbox .search-content .search-item .item-content text:nth-child(1) {
+  font-size: 36rpx;
+  font-weight: 700;
+}
+.content-box .searchbox .search-content .search-item .item-content text:nth-child(2) {
+  margin-top: 19rpx;
+  font-size: 24rpx;
+}
+.content-box .searchbox .search-content .search-item .item-content text:nth-child(3) {
+  margin-top: 18rpx;
+  font-size: 22rpx;
+  color: #898888FF;
+}
+.content-box .searchbox .search-content .search-item .text-status {
+  margin-right: 57rpx;
+  color: #9E9E9EFF;
+  font-size: 28rpx;
+}
+@keyframes iteman {
+0% {
+    transform: translateX(1000px);
+}
+100% {
+    transform: translateX(0px);
+}
+}
+@keyframes iteman2 {
+0% {
+    transform: translateX(-1000px);
+}
+100% {
+    transform: translateX(0px);
+}
+}
